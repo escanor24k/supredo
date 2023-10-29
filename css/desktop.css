@@ -1,0 +1,279 @@
+.mainContainer{
+    display: inline-block;
+    background: url('../img/head.jpg') no-repeat;
+    background-size: cover;
+    width:100%;
+    height:900px;
+    /* height:auto; */
+    position:relative;
+}
+.heroOverlay{
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:900px;
+    background: linear-gradient(0deg, var(--hero_over1) 0%, var(--hero_over2) 100%);
+}
+nav{
+    margin:0 auto;
+    display:flex;
+    width:80%;
+    flex-direction: row;
+    justify-content: space-between;
+    padding:15px 10px;
+    z-index:1; 
+}
+hr{
+    margin:0 auto;
+    background-color: grey;
+    height:1px;
+    width:80%;
+    border:none;
+}
+nav > img{
+    width:auto;
+    height:40px;
+    z-index:1;
+    transition: 0.4s;
+}
+nav > img:hover{ /* LOGO */
+    width:auto;
+    height:40px;
+    transition: 0.4s;
+    padding:2px;
+}
+nav ul{
+    display:flex;
+    list-style: none;
+    gap:30px;
+    z-index:1;
+}
+nav li{
+    padding:5px 10px;
+    border-radius: 5px;
+}
+nav li:active{
+    background-color: var(--menu_bg);
+    color: black;
+}
+nav > ul > li > a{
+    color:var(--menu_col);
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: ease-in-out 0.4s;
+}
+nav > ul > li > a:hover{
+    color: var(--menu_col_hov);
+    background-color: var(--menu_bg);
+    padding:5px 10px;
+    border-radius: 5px;
+    transition: ease-in-out 0.4s;
+}
+.heroContainer{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    text-shadow: 0 1px 2px black;
+    margin:150px 0;
+    gap:100px;
+}
+.heroContainer > .banner{
+    width:40%;
+    padding:10px;
+    color:white;
+    z-index:1;
+}
+.contain{
+    width:100%;
+}
+.heroContainer > img{
+    width:450px;
+    height:550px;
+    z-index:1;
+}
+.banner > h1{
+    font-size: 3.5rem;
+    padding-left:10px;
+    font-family: var(--font-gruppo);
+    font-weight: 200;
+    letter-spacing: 0.5rem;
+    padding:20px;
+}
+.banner > h2{
+    font-family: var(--font-gruppo);
+    font-size: 2.5rem;
+}
+.priceTable{
+    display:flex;
+    gap: 3.5rem;
+}
+.pricingT{
+    width:10px;
+    line-height: 15px;
+    display: flex;
+    text-align: right;
+    font-size: 1rem;
+}
+.price{
+    font-size: 3rem;
+}
+.banner > button{
+    background-color: rgb(65, 109, 204);
+    padding:10px 20px;
+    border:none;
+    margin: 1rem 0 0 3rem;
+    font-weight: bold;
+    color:white;
+    font-size:1.1rem;
+    transition: ease-in-out 0.4s;
+}
+.banner > button:hover{
+    transition: ease-in-out 0.4s;
+    box-shadow: 0 1px 15px black;
+}
+section{
+    width:100%;
+    padding:45px;
+    font-weight: 400;
+}
+.wrapper_bg{
+    display:flex;
+    justify-content: center;
+    background-color: var(--wrapper-bg);
+    color: var(--wrapper-col);
+}
+.wrapper{
+    display: inline-block;
+    width:70%;
+}
+.wrapper > h1{
+    font-weight: bold;
+    font-size:2.5rem;
+    font-family: var(--font-gruppo);
+}
+.placeholder{
+    color:grey;
+}
+select > option{
+    color:black;
+}
+.domainChoose{
+    margin:30px 0;
+}
+.domainChoose > .domainList{
+    width:200px;
+    padding:20px;
+    margin:0 0;
+    box-sizing: content-box;
+}
+.domainChoose > .domainField{
+    width:800px;
+    padding:20px;
+    margin:0 -5px;
+    box-sizing: content-box;
+}
+.searchDomain{
+    background-color: rgb(221, 0, 129);
+    color: white;
+    width:100px;
+    padding:20px;
+    box-sizing: content-box;
+    font-size:0.8rem;
+    border:2px solid rgb(221, 0, 129);
+    transition: 0.4s;
+}
+.searchDomain:hover{
+    box-shadow: 0 1px 15px black;
+    transition: 0.4s;
+}
+.domainLogos{
+    margin:20px 0 0 -50px;
+    display:flex;
+    color:rgb(25, 75, 241);
+    text-shadow: 0 1px 3px rgb(148, 148, 255);
+}
+.domainLogos >.domainName{
+    font-size:1.4rem;
+    margin-left:50px;
+}
+.domainLogos > .pricing{
+    font-size: 1.5rem;
+    margin-left:10px;
+}
+.gridContainer{
+    width:100%;
+    display:flex;
+    justify-content: center;
+    /* background-color: aqua; */
+}
+.gridSection{
+    width:80%;
+    display:grid;
+    justify-content: space-around;
+    grid-gap: 20px 20px;
+    grid-template-areas:
+    "title title"
+    "logodesign emailservice"
+    "staticpage hostingplan"
+    "freethemes certificates"
+    /* ;background-color: rgb(67, 78, 78); */
+}
+.flex{
+    display: flex;
+    gap:0 75px;
+}
+.flex-col{
+    flex-direction: column;
+}
+.rangetext{
+    width:300px;
+}
+.item{
+    width:600px;
+    /* background-color: rgb(88, 126, 126); */
+}
+.scaleIcon{
+    font-size:4rem;
+    padding:20px;
+    border-radius: 100%;
+}
+.iconOrange{
+    color:orange;
+    border: 2px solid orange;
+}
+.iconGrey{
+    color: grey;
+    border: 2px solid grey;
+}
+.iconMagenta{
+    color: magenta;
+    border: 2px solid magenta;
+}
+.iconNavy{
+    color:navy;
+    border: 2px solid navy;
+}
+.iconBrown{
+    color: brown;
+    border: 2px solid brown;
+}
+.iconBlue{
+    color: rgb(35, 72, 240);
+    border: 2px solid rgb(35, 72, 240);
+}
+.title > h1{
+    
+    text-align: center;
+    font-family: var(--font-gruppo);
+    font-weight: bold;
+    font-size:2rem;
+    margin: 50px;
+}
+.title{grid-area: title; width:100%;}
+.logodesign{grid-area: logodesign;}
+.emailservice{grid-area: emailservice;}
+.staticpage{grid-area: staticpage;}
+.hostingplan{grid-area: hostingplan;}
+.freethemes{grid-area: freethemes;}
+.certificates{grid-area: certificates;}
