@@ -213,10 +213,11 @@ select > option{
     justify-content: space-around;
     grid-gap: 20px 20px;
     grid-template-areas:
-    "title title"
-    "logodesign emailservice"
-    "staticpage hostingplan"
-    "freethemes certificates"
+        "title title"
+        "logodesign emailservice"
+        "staticpage hostingplan"
+        "freethemes certificates"
+    ;
     /* ;background-color: rgb(67, 78, 78); */
 }
 .flex{
@@ -277,3 +278,77 @@ select > option{
 .hostingplan{grid-area: hostingplan;}
 .freethemes{grid-area: freethemes;}
 .certificates{grid-area: certificates;}
+.video{
+    gap:40px;
+    display:flex;
+    background: url('../img/video_image.jpg') no-repeat;
+    background-size: cover;
+    width:auto;
+    height:600px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-transform: uppercase;
+    color:white;
+    text-align: center;
+    text-shadow: 0 0px 5px black;
+}
+.video > h1{
+    font-size: 3rem;
+}
+.video > p{
+    font-size: 1.5rem;
+}
+.gridSectionResell{
+    width:100%;
+    display:grid;
+    grid-template-areas:
+        "resellimage resellcontainer";
+}
+.resellimage{grid-area: resellimage;width:20%;}
+.resellcontainer{grid-area: resellcontainer;width:100%;}
+.featureList{
+    display: flex;
+    flex-direction: row;
+    gap: 60px;
+}
+.resellcontainer h1{
+    margin-bottom: 40px;
+    font-size: 3.5rem;
+    font-family: var(--font-gruppo);
+}
+.resellcontainer p{
+    font-size: 1.1rem;
+}
+.infoText{
+    margin: 30px 0 30px 0;
+}
+.infoText > p{
+    font-size: 1.4rem;
+    color: var(--special-writting);
+}
+.rowing{
+    margin: 30px 0 30px 0;
+    display:flex;
+    gap:20px;
+    align-items: center;
+    text-shadow: 0 2px 0px black;
+}
+.rowing > h2{
+    font-size: 3.5rem;
+    color: orange;
+}
+.rowing > h3{
+    font-size: 2.5rem;
+    text-transform: uppercase;
+}
+.buyNow{
+    width:200px;
+    padding:15px;
+    border:none;
+    background-color: rgb(89, 203, 248);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.1rem;
+    font-family: 'Verdana', Geneva, Tahoma, sans-serif;
+}
