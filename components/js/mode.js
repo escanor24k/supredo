@@ -13,9 +13,7 @@ function calculateSettingAsThemeString({ localStorageTheme, systemSettingDark })
 
 function updateButton({ buttonEl, isDark }) {
   const newCta = isDark ? "modeSwitchButton fa-regular fa-lightbulb" : "modeSwitchButton fa-solid fa-lightbulb";
-  // const newCte = isDark ? " Dark" : " Light"
-  // use an aria-label if you are omitting text on the button
-  // and using a sun/moon icon, for example
+
   buttonEl.setAttribute("class", newCta);
   buttonEl.innerText = "";
 }
