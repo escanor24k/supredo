@@ -145,7 +145,6 @@ section{
 }
 .wrapper{
     display: inline-block;
-    width:70%;
 }
 .wrapper > h1{
     font-weight: bold;
@@ -166,12 +165,14 @@ select > option{
     padding:20px;
     margin:0 0;
     box-sizing: content-box;
+    outline:none;
 }
 .domainChoose > .domainField{
     width:800px;
     padding:20px;
     margin:0 -5px;
     box-sizing: content-box;
+    outline:none;
 }
 .searchDomain{
     background-color: rgb(221, 0, 129);
@@ -202,6 +203,8 @@ select > option{
     margin-left:10px;
 }
 .gridContainer{
+    margin-top:75px;
+    margin-bottom:75px;
     width:100%;
     display:flex;
     justify-content: center;
@@ -264,14 +267,12 @@ select > option{
     border: 2px solid rgb(35, 72, 240);
 }
 .title > h1{
-    
     text-align: center;
     font-family: var(--font-gruppo);
     font-weight: bold;
-    font-size:2rem;
-    margin: 50px;
+    font-size:3rem;
 }
-.title{grid-area: title; width:100%;}
+.title{grid-area: title; width:100%;height:5rem;}
 .logodesign{grid-area: logodesign;}
 .emailservice{grid-area: emailservice;}
 .staticpage{grid-area: staticpage;}

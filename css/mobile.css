@@ -1,0 +1,304 @@
+@media screen and (max-width: 768px) {
+    .modeSwitchButton{
+        font-size:3rem;
+    }
+    .mainMenu{
+        display:none;
+    }
+    #navContainer{
+        display:initial;
+      }
+    .menu {
+        font-size: 2.5em;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        border: none;
+        background: none;
+        transition: 0.3s;
+        z-index: 99;
+        color: rgb(255, 255, 255);
+      }
+      .menu:hover {
+        transition: 0.3s;
+        color: rgb(59, 253, 0);
+      }
+      .popNav {
+        width: 100%;
+        height: 100vh;
+        background-color: black;
+        position: fixed;
+        left: 0;
+        top: 0;
+        visibility: visible;
+        opacity: 1;
+        transition: ease-in-out 400ms;
+      }
+      .hidden {
+        visibility: hidden;
+        opacity: 0;
+        transition: ease-in-out 200ms;
+      }
+      #menuBar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+      #menuBar ul {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        list-style: none;
+        text-decoration: none;
+        font-size: 3rem;
+        width: 90%;
+        gap: 20px;
+      }
+      #menuBar li {
+        background-color: rgba(53, 53, 53, 0.05);
+        padding: 5px;
+        text-transform: uppercase;
+        font-weight: bold;
+      }
+      #menuBar li a {
+        color: white;
+        background-color: rgba(53, 53, 53, 0.05);
+        text-decoration: none;
+        transition: all 0.4s;
+        opacity: 1;
+      }
+      #menuBar li a:hover {
+        transition: all 0.4s;
+        opacity: 0.7;
+      }
+    #menuBar {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      z-index: 2;
+    }
+    #menuBar ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      list-style: none;
+      text-decoration: none;
+      font-size: 3rem;
+      width: 90%;
+      gap: 20px;
+    }
+    #menuBar li {
+      background-color: rgba(53, 53, 53, 0.05);
+      padding: 5px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+    #menuBar li a {
+      color: white;
+      background-color: rgba(53, 53, 53, 0.05);
+      text-decoration: none;
+      transition: all 0.4s;
+      opacity: 1;
+    }
+    #menuBar li a:hover {
+      transition: all 0.4s;
+      opacity: 0.7;
+    }
+
+    
+    /* PAGE CONVERT */
+    nav > img{
+        padding-left:30px;
+        width:auto;
+        height:40px;
+        z-index:1;
+        transition: 0.4s;
+    }
+    nav > img:hover{ /* LOGO */
+        width:auto;
+        height:40px;
+        transition: 0.4s;
+        padding-left:30px;
+    }
+    .heroContainer{
+        width:100%;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        text-shadow: 0 1px 2px black;
+        position: absolute;
+        top:0px;text-align: center;
+    }
+    .heroContainer > .banner{
+        width:100%;
+        padding:10px;
+        color:white;
+        z-index:1;
+    }
+    hr{
+        display:none;
+    }
+    .contain{
+        width:100%;
+        
+    }
+    .heroContainer > img{
+        width:250px;
+        height:350px;
+        z-index:1;
+    }
+    .banner > h1{
+        font-size: 3.5rem;
+        font-family: var(--font-gruppo);
+        font-weight: 200;
+        letter-spacing: 0.5rem;
+    }
+    .banner > h2{
+        font-family: var(--font-gruppo);
+        font-size: 2.5rem;
+    }
+    .priceTable{
+        display:flex;
+        justify-content: center;
+    }
+    .pricingT{
+        width:10px;
+        line-height: 15px;
+        font-size: 1rem;
+    }
+    .price{
+        font-size: 3rem;
+    }
+    .banner > button{
+        background-color: rgb(65, 109, 204);
+        padding:10px 20px;
+        border:none;
+        margin: 1rem 0 0 3rem;
+        font-weight: bold;
+        color:white;
+        font-size:1.1rem;
+        transition: ease-in-out 0.4s;
+    }
+    .banner > button:hover{
+        transition: ease-in-out 0.4s;
+        box-shadow: 0 1px 15px black;
+    }
+    section{
+        width: 100%;
+        padding: 0;
+        font-weight: 400;
+    }
+    .wrapper_bg{
+        width:100%;
+        padding:30px;
+    }
+    .wrapper{
+        width:95%;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .domainChoose > .domainList{
+        width:100%;
+        padding:20px;
+        margin:0 0;
+        box-sizing: border-box;
+    }
+    .domainChoose > .domainField{
+        width:100%;
+        padding:20px;
+        margin:0 -5px;
+        box-sizing: border-box;
+    }
+    .searchDomain{
+        box-sizing: border-box;
+        background-color: rgb(221, 0, 129);
+        color: white;
+        width:100%;
+        padding:20px;
+        box-sizing: border-box;
+        font-size:0.8rem;
+        transition: 0.4s;
+    }
+    .domainLogos{
+        display: none;
+    }
+    .gridContainer{
+        
+        width:100%;
+        
+        justify-content: center;
+        /* background-color: aqua; */
+    }
+    .gridSection{
+        width:100%;
+        display:grid;
+        align-items: center;
+        grid-gap: 50px;
+        grid-template-areas:
+            "title"
+            "logodesign"
+            "emailservice"
+            "staticpage"
+            "hostingplan"
+            "freethemes"
+            "certificates"
+        ;
+        /* ;background-color: rgb(67, 78, 78); */
+    }
+    .item{
+        width:100%;
+        align-items: center;
+        justify-content: center;
+        /* background-color: rgb(88, 126, 126); */
+    }
+    .flex{
+        display: flex;
+        flex-direction: column;
+        gap:0 75px;
+    }
+    .scaleIcon{
+        font-size:4rem;
+        padding:40px;
+        border-radius: 100%;
+        margin-bottom:20px;
+    }
+    .flex-col h3{
+        text-align: center;
+        font-size: 1.4rem;
+    }
+    .flex-col p{
+        text-align: center;
+        font-size: 1.2rem;
+    }
+    .gridSectionResell{
+        width:95%;
+        display:grid;
+        grid-template-areas:
+            "resellimage"
+            "resellcontainer"
+        ;
+        text-align: center;
+    }
+    .resellMobile{
+        width:auto;
+        height:300px;
+        margin-bottom:50px;
+    }
+    .resellimage{grid-area: resellimage;}
+    .resellcontainer{grid-area: resellcontainer;width:100%;}
+    .featureList{
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+    }
+    .rowing{
+        display: block;
+        text-shadow: 0 2px 0px black;
+    }
+  }
+  
