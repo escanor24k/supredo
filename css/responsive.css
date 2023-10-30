@@ -1,4 +1,4 @@
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
     .modeSwitchButton{
         font-size:3rem;
     }
@@ -276,17 +276,20 @@
         font-size: 1.2rem;
     }
     .gridSectionResell{
+        margin-top: 30px;
+        margin-bottom: 30px;
         width:95%;
         display:grid;
+        text-align: center;
+        justify-content: center;
         grid-template-areas:
             "resellimage"
             "resellcontainer"
         ;
-        text-align: center;
     }
     .resellMobile{
-        width:auto;
-        height:300px;
+        width:600px;
+        height:600px;
         margin-bottom:50px;
     }
     .resellimage{grid-area: resellimage;}
