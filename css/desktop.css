@@ -211,7 +211,7 @@ select > option{
     /* background-color: aqua; */
 }
 .gridSection{
-    width:80%;
+    
     display:grid;
     justify-content: space-around;
     grid-gap: 20px 20px;
