@@ -59,3 +59,21 @@ body{
 #navContainer{
   display:none;
 }
+#modal {
+  min-width:290px;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 15px;
+  background-color: var(--fourth-bg);
+  color: var(--secondary-col);
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+#modal button{
+  width:150px;
+  padding: 5px;
+}
