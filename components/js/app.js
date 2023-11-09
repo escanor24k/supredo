@@ -1,4 +1,5 @@
 const searchButton = document.getElementById("searchDomain");
+const domainName = document.getElementById("domainField");
 
 searchButton.addEventListener('click', function(){
     searchDomain();
@@ -12,13 +13,18 @@ function searchDomain() {
     var modalContent = document.getElementById("modalContent");
 
     if (selectedValue !== "") {
-      modalContent.innerHTML = `${domainName}.${selectedValue}<br /> ist leider schon vergeben.`;
-      openModal();
+        modalContent.innerHTML = `${domainName}.${selectedValue}<br /> ist leider schon vergeben.`;
+        domainName.value = "";
+        openModal();
     if(domainName == "")
         modalContent.innerHTML = "Bitte gib einen Domainnamen an."
+        openModal();
+    if(domainName.length < 4)
+        modalContent.innerHTML = "Deine Domain muss mindestens 4 Zeichen enthalten."
+        openModal();
     } else {
-      modalContent.innerText = "Bitte wähle eine Domain-Endung aus.";
-      openModal();
+        modalContent.innerHTML = "Bitte wähle eine Domain-Endung aus.";
+        openModal();
     }
 }
 

@@ -176,10 +176,11 @@ select > option{
 }
 .searchDomain{
     position:relative;
+    margin-left:-4px;
     background-color: rgb(221, 0, 129);
     color: white;
     width:100px;
-    padding:20px;
+    padding:19.8px;
     box-sizing: content-box;
     font-size:0.8rem;
     border:2px solid rgb(221, 0, 129);
