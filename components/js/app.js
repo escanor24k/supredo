@@ -50,7 +50,7 @@ function closeModal() {
 }
 
 document.addEventListener("DOMContentLoaded", function() {
-    const api_key = '437949523ee2d6306c8fcaad1eeb8d03';
+    const api_key = '';
     
     let weather = "";
 
