@@ -194,5 +194,48 @@
       </div>
     </div>
   </section>
+  <section>
+    <div class="container">
+      <div class="upperSection">
+          <div class="weatherState">
+              <div class="weather-icon"><img src="http://openweathermap.org/img/w/10d.png" /></div>
+              <div class="floatText">
+                  <p id="weatherStateNow" class="weatherStateNow">Sunny</p>
+                  <p id="weatherStateExact" class="weatherStateNow">Extremly sunny</p>
+              </div>
+          </div>
+          <div id="selection" class="selection">
+              <select id="locations" name="locations">
+                  <option id="munich" name ="munich" value="munich">Munich</option>
+                  <option id="augsburg" name ="augsburg" value="augsburg">Augsburg</option>
+                  <option id="schweiz" name ="schweiz" value="schweiz">Schweiz</option>
+                  <option id="kongo" name ="kongo" value="kongo">Kongo</option>
+              </select>
+          </div>
+      </div>
+      <div class="midSection">
+          <div id="temperature" class="temperature">
+              <div class="tempLeft">
+                  <p></p>
+              </div>
+              <div class="tempRight">
+                  <p id="tempNow" class="tempNow">7°</p>
+                  <p id="tempBetween" class="tempBetween">10° - 20°</p>
+              </div>
+          </div>
+      </div>
+      <hr />
+      <div class="botSection">
+          <div class="gridflex">
+              <div class="item1 textcenter">Gefühlt:<p id="feelslike"></p></div>
+              <div class="item2 textcenter">Luftfeuchtigkeit:<p id="humidity"></p></div>
+              <div class="item3 textcenter">Luftdruck:<p id="pressure"></p></div>
+              <div class="item4 textcenter">Windgeschwindigkeit:<p id="windspeed"></p></div>
+              <div class="item5 textcenter">Sonnenaufgang:<p id="sunrise"></p></div>
+              <div class="item6 textcenter">Sonnenuntergang:<p id="sunset"></p></div>
+          </div>
+      </div>
+  </div>
+  </section>
 </body>
 </html>

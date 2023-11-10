@@ -291,6 +291,14 @@ select > option{
     text-align: center;
     text-shadow: 0 0px 5px black;
 }
+.video img{
+    transition: ease-in-out .3s;
+    opacity:0.8;
+}
+.video img:hover{
+    opacity: 1;
+    transition: ease-in-out .3s;
+}
 .video > h1{
     font-size: 3rem;
 }
@@ -356,3 +364,87 @@ select > option{
     transition: ease-in-out 0.4s;
     box-shadow: inset 0 1px 15px black;
 }
+.container{
+    display:flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width:800px;
+    width:95%;
+    min-height: 100px;
+    background-color: var(--fourth-bg);
+    color: var(--secondary-col);
+    padding:10px;
+    box-shadow: 0 0 685px var(--box-shadow);
+    border-radius: 5px;
+    margin-bottom:20px;
+}
+.upperSection{
+    display:flex;
+    width:100%;
+    justify-content: space-between;
+}
+.weatherState{
+    display:flex;
+}
+.floatText > p{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.midSection{
+    margin-top:-30px;
+    margin-bottom:-30px;
+}
+.temperature{
+    display:flex;
+    justify-content: space-between;
+    text-align: right;
+    top:60px;
+    padding:10px;
+    width:100%;
+    height:80px;
+}
+.tempNow{
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+.tempBetween{
+    background-color: var(--fourth-bg);
+}
+.botSection{
+    margin-top:20px;
+    width: 100%;
+}
+.gridflex{
+    display:grid;
+    justify-content: space-around;
+    grid-template-rows: 60px 60px 60px;
+    grid-template-areas:
+        "item1 item2"
+        "item3 item4"
+        "item5 item6"
+    ;
+}
+.textcenter{
+    text-align: center;
+}
+.item1, .item2, .item3, .item4, .item5, .item6{
+    color: var(--secondary-col);
+    font-weight: bold;
+}
+.item1 p, .item2 p, .item3 p, .item4 p, .item5 p, .item6 p{
+
+    color: var(--secondary-col);
+    font-size:1.1rem;
+    text-shadow: 0 0px 1px black;
+}
+.container hr{
+    margin-top:15px;
+    width:100%;
+}
+.item1{grid-area: item1;} 
+.item2{grid-area: item2;} 
+.item3{grid-area: item3;} 
+.item3{grid-area: item3;} 
+.item4{grid-area: item4;} 
+.item5{grid-area: item5;} 
+.item6{grid-area: item6;}

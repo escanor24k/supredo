@@ -16,6 +16,7 @@
   --wrapper-col: rgb(0,0,0);
   --special-writting: rgb(98, 112, 131);
   --mode-switch: rgb(151, 149, 255);
+  --box-shadow: rgba(174, 166, 193, 0.7);
 }
 [data-theme="dark"] {
   --fourth-bg: #000000;
@@ -26,6 +27,7 @@
   --wrapper-col: rgb(255, 255, 255);
   --special-writting: rgb(116, 143, 182);
   --mode-switch: rgb(255, 255, 255);
+  --box-shadow: rgba(76, 0, 255, 0.7);
 }
 .modeSwitchButton{
   color:var(--mode-switch);
