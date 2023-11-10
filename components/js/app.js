@@ -1,4 +1,4 @@
-const api_key = "syStimYYnk0gSRMJoc9cmqXD897BtPnE";
+const api_key = "";
 let domainEntryField = "google.com";
 const URL = `https://api.jsonwhois.io/?key=${api_key}&domain=${domainEntryField}`;
 console.log(URL)
