@@ -162,7 +162,7 @@ select > option{
 }
 .domainChoose > .domainList{
     width:200px;
-    padding:20px;
+    padding:21px;
     margin:0 0;
     box-sizing: content-box;
     outline:none;
@@ -176,11 +176,12 @@ select > option{
 }
 .searchDomain{
     position:relative;
-    margin-left:-4px;
+    margin-left:-5px;
     background-color: rgb(221, 0, 129);
     color: white;
     width:100px;
-    padding:19.8px;
+    max-height:13.5px;
+    padding:21px;
     box-sizing: content-box;
     font-size:0.8rem;
     border:2px solid rgb(221, 0, 129);
